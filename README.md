@@ -17,7 +17,7 @@ AGORA adună în 59 de secțiuni (meniul din stânga; ☰ pe mobil) explicații 
 Verificate în cod:
 - Hartă mozaic a statelor (zona euro, UE în afara zonei, microstate, folosire unilaterală) cu panou de detaliu la apăsare; listă filtrabilă de state pe valuri de aderare.
 - Căutare în meniu (insensibilă la diacritice; Enter deschide profilul unei țări) și în glosar (33 de termeni).
-- Chestionar de 28 de întrebări, în ordine amestecată (Fisher–Yates), cu explicații.
+- Chestionar de 28 de întrebări, în ordine amestecată (Fisher–Yates), cu explicații; la final apare lista „De revăzut” (întrebările greșite, cu răspunsul corect și explicația) și butonul „Reia doar întrebările greșite”.
 - Calculatoare locale: convertor leu–euro cu curs introdus manual, distanță în linie dreaptă între capitale (haversine), buget de călătorie, recomandator de destinație, generator de listă de bagaje.
 - Jurnalul călătorului: se ține doar în memoria paginii; poate fi exportat/importat ca fișier JSON (la import se validează țările, datele și lungimea notițelor).
 - Comutator regim zi/noapte; la prima deschidere se respectă preferința sistemului pentru tema luminoasă.
@@ -29,7 +29,7 @@ Verificate în cod:
 2. În „Harta interactivă" apasă un pătrățel pentru profilul țării; „Închide ✕" îl ascunde.
 3. În „Profiluri de țară" filtrează după valul de aderare și apasă o țară.
 4. La „Convertor manual" introdu tu cursul zilei (de exemplu de pe bnr.ro) și suma; atlasul nu preia cursuri de pe internet.
-5. În „Chestionar" răspunde la întrebări; „Ia-o de la capăt" repornește.
+5. În „Chestionar" răspunde la întrebări; la final revezi întrebările greșite și poți relua doar acele întrebări; „Ia-o de la capăt" repornește tot chestionarul.
 6. În „Jurnalul călătorului" adaugă vizite; ca să le păstrezi, folosește „Exportă (.json)" și, ulterior, „Importă (.json)".
 
 ## Confidențialitate și rețea
@@ -64,6 +64,9 @@ Verificate în cod:
 Descarcă `index.html` și deschide-l în browser; funcționează fără internet.
 
 ## Istoric / Changelog
+
+### 11.10.2026 (a treia actualizare) — 11 octombrie 2026
+- Chestionar: rezultatul listează întrebările greșite („De revăzut”) cu răspunsul corect și explicația și permite reluarea doar a acestora (totul rămâne în memoria paginii).
 
 ### 11.10.2026 (a doua actualizare) — 11 octombrie 2026
 - Legături directe către secțiuni prin `#id`, cu Înapoi/Înainte funcționale și titlu de pagină actualizat (fără stocare locală).

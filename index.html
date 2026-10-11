@@ -2,7 +2,7 @@
 <html lang="ro" data-theme="night">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-+sTsiLv1WsltrFDhTnGzFv4mxx7UveRHRlCk3ylAfOM=' 'sha256-iHAzmJwLgNjH6QmjgrMuE+Bx3jofsYjojJdR2y9Rupc=' 'sha256-IMQnTRcm5QeuyWPpVpkhGSUNeAgAlTFkx+4RBww7fZA=' 'sha256-wLCSNSjuVIXaRB2f5VstkSbH129WXhIPuA2Kg/WoF6I=' 'sha256-iYJlhgQ+fYfaTMIWxaZqTfijEyQgpVv+boWTxnXEm4A=' 'sha256-elYvzgshhrCDqxBfLdhrdpcgO7JiMLMUx22oQ8HUxGk=' 'sha256-urXmnqN13tWxgyXDk4SUBUI5p/jyZYQMVhfadJfz6Oc='; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-+sTsiLv1WsltrFDhTnGzFv4mxx7UveRHRlCk3ylAfOM=' 'sha256-iHAzmJwLgNjH6QmjgrMuE+Bx3jofsYjojJdR2y9Rupc=' 'sha256-IMQnTRcm5QeuyWPpVpkhGSUNeAgAlTFkx+4RBww7fZA=' 'sha256-iEvtXtThDzFdhb/eTkcFzXTrp3BLZc9FYhwnSl077eA=' 'sha256-iYJlhgQ+fYfaTMIWxaZqTfijEyQgpVv+boWTxnXEm4A=' 'sha256-elYvzgshhrCDqxBfLdhrdpcgO7JiMLMUx22oQ8HUxGk=' 'sha256-urXmnqN13tWxgyXDk4SUBUI5p/jyZYQMVhfadJfz6Oc='; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AGORA — Atlas al Zonei Euro</title>
 <meta name="description" content="Ghid complet, off-line, despre Zona Euro: istorie, geografie, organizare politică și administrativă, state membre, și un ghid practic pentru călători.">
@@ -2610,7 +2610,7 @@ var quizQuestions = [
    explain:'Circa 18 state (număr orientativ, variază după sursă și an), de la pionieri precum Germania și Suedia până la valul recent — România (2023), Austria, Slovacia, Ungaria, Irlanda.'}
 ];
 
-var quizState = {i:0, score:0, answered:false, order:[]};
+var quizState = {i:0, score:0, answered:false, order:[], missed:[]};
 
 function quizShuffleOrder(){
   var arr = quizQuestions.map(function(_,i){return i;});
@@ -2618,8 +2618,8 @@ function quizShuffleOrder(){
   return arr;
 }
 
-function renderQuiz(){
-  quizState = {i:0, score:0, answered:false, order:quizShuffleOrder()};
+function renderQuiz(onlyOrder){
+  quizState = {i:0, score:0, answered:false, order:(Array.isArray(onlyOrder)&&onlyOrder.length)?onlyOrder:quizShuffleOrder(), missed:[]};
   renderQuizQuestion();
 }
 
@@ -2629,7 +2629,7 @@ function renderQuizQuestion(){
   var qi = quizState.order[quizState.i];
   var Q = quizQuestions[qi];
   var html = ''+
-    '<div class="quiz-progress">Întrebarea '+(quizState.i+1)+' din '+quizQuestions.length+' · scor: '+quizState.score+'</div>'+
+    '<div class="quiz-progress">Întrebarea '+(quizState.i+1)+' din '+quizState.order.length+' · scor: '+quizState.score+'</div>'+
     '<div class="quiz-q">'+esc(Q.q)+'</div>'+
     '<div class="quiz-opts" id="quizOpts">'+
       Q.opts.map(function(o,idx){ return '<button type="button" data-idx="'+idx+'">'+esc(o)+'</button>'; }).join('')+
@@ -2637,7 +2637,7 @@ function renderQuizQuestion(){
     '<div class="quiz-explain" id="quizExplain" role="status" aria-live="polite">'+esc(Q.explain)+'</div>'+
     '<div class="quiz-nav">'+
       '<button class="btn ghost" id="quizRestart" type="button">Ia-o de la capăt</button>'+
-      '<button class="btn" id="quizNext" type="button" disabled>'+(quizState.i===quizQuestions.length-1?'Vezi rezultatul':'Următoarea →')+'</button>'+
+      '<button class="btn" id="quizNext" type="button" disabled>'+(quizState.i===quizState.order.length-1?'Vezi rezultatul':'Următoarea →')+'</button>'+
     '</div>';
   host.innerHTML = html;
 
@@ -2652,36 +2652,41 @@ function renderQuizQuestion(){
         if(i===correct) b.classList.add('correct');
         else if(i===idx) b.classList.add('wrong');
       });
-      if(idx===correct) quizState.score++;
+      if(idx===correct) quizState.score++; else quizState.missed.push(qi);
       document.getElementById('quizExplain').classList.add('show');
       document.getElementById('quizNext').disabled = false;
-      host.querySelector('.quiz-progress').textContent = 'Întrebarea '+(quizState.i+1)+' din '+quizQuestions.length+' · scor: '+quizState.score;
+      host.querySelector('.quiz-progress').textContent = 'Întrebarea '+(quizState.i+1)+' din '+quizState.order.length+' · scor: '+quizState.score;
     });
   });
   document.getElementById('quizNext').addEventListener('click', function(){
-    if(quizState.i < quizQuestions.length-1){
+    if(quizState.i < quizState.order.length-1){
       quizState.i++; quizState.answered=false; renderQuizQuestion();
     } else {
       renderQuizResult();
     }
   });
-  document.getElementById('quizRestart').addEventListener('click', renderQuiz);
+  document.getElementById('quizRestart').addEventListener('click', function(){ renderQuiz(); });
 }
 
 function renderQuizResult(){
   var host = document.getElementById('quizBox');
   if(!host) return;
-  var pct = Math.round(100*quizState.score/quizQuestions.length);
+  var tot = quizState.order.length, pct = Math.round(100*quizState.score/tot);
   var verdict = pct>=85 ? 'Cunoști zona euro mai bine decât mulți funcționari europeni.' :
                 pct>=60 ? 'Un rezultat solid — mai citește o dată secțiunile Istorie și Organizare.' :
                 'Un început bun — răsfoiește atlasul și încearcă din nou.';
   host.innerHTML = ''+
     '<div class="quiz-result">'+
-      '<div class="score">'+quizState.score+' / '+quizQuestions.length+'</div>'+
+      '<div class="score">'+quizState.score+' / '+tot+'</div>'+
       '<p style="color:var(--text-2);margin:10px 0 20px;">'+esc(verdict)+'</p>'+
-      '<button class="btn" id="quizRestart2" type="button">Ia-o de la capăt</button>'+
+      (quizState.missed.length ? '<div class="quiz-missed" style="text-align:left;margin:0 0 20px;"><h3 style="font-size:1rem;margin:0 0 8px;">De revăzut ('+quizState.missed.length+')</h3><ul style="margin:0;padding-left:1.1em;">'+
+        quizState.missed.map(function(qi){ var Q=quizQuestions[qi]; return '<li style="margin:0 0 10px;"><strong>'+esc(Q.q)+'</strong><br>Răspuns corect: '+esc(Q.opts[Q.correct])+'. <span style="color:var(--text-2);">'+esc(Q.explain)+'</span></li>'; }).join('')+'</ul></div>' : '')+
+      (quizState.missed.length ? '<button class="btn" id="quizRetry" type="button">Reia doar întrebările greșite</button> ' : '')+
+      '<button class="btn'+(quizState.missed.length?' ghost':'')+'" id="quizRestart2" type="button">Ia-o de la capăt</button>'+
     '</div>';
-  document.getElementById('quizRestart2').addEventListener('click', renderQuiz);
+  document.getElementById('quizRestart2').addEventListener('click', function(){ renderQuiz(); });
+  var rt = document.getElementById('quizRetry');
+  if(rt){ var again = quizState.missed.slice(); rt.addEventListener('click', function(){ renderQuiz(again); }); }
 }
 
 document.addEventListener('DOMContentLoaded', function(){
