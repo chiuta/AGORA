@@ -150,7 +150,7 @@ button{cursor:pointer;}
 .brand-emblem{
   width:40px;height:40px;flex:0 0 auto;
 }
-.brand-title{
+.brand-title{margin:0;
   font-family:var(--font-display);
   font-size:22px;font-weight:700;letter-spacing:.06em;
   color:var(--gold-bright);
@@ -415,10 +415,10 @@ footer.appfoot a{color:var(--text-faint);text-decoration:underline;}
 <body>
 <a class="skip" href="#mainContent">Sari la conținut</a>
 <noscript><p style="margin:0;padding:10px 16px;background:#faf3e1;color:#2a2013;">Atlasul funcționează complet cu JavaScript activat (hartă, calculatoare, chestionar, jurnal). Fără JavaScript, toate secțiunile text sunt afișate una sub alta, fără navigare.</p></noscript>
-<div class="mobile-topbar">
+<header class="mobile-topbar">
   <button id="menuToggle" aria-label="Deschide meniul" aria-expanded="false">☰</button>
   <strong style="font-family:var(--font-display);color:var(--gold-bright);letter-spacing:.04em;">AGORA</strong>
-</div>
+</header>
 
 <div class="app">
   <aside class="sidebar" id="sidebar">
@@ -432,7 +432,7 @@ footer.appfoot a{color:var(--text-faint);text-decoration:underline;}
           <text x="24" y="30" text-anchor="middle" font-family="var(--font-display)" font-size="17" fill="var(--gold-bright)" font-weight="700">€</text>
         </svg>
         <div>
-          <div class="brand-title">AGORA</div>
+          <h1 class="brand-title">AGORA</h1>
           <div class="brand-sub">Atlas al Zonei Euro</div>
         </div>
       </div>
@@ -763,7 +763,7 @@ footer.appfoot a{color:var(--text-faint);text-decoration:underline;}
           <div class="stat"><div class="n" style="font-size:16px;">Cultura europeană</div><div class="l">Printre figurile propuse: Maria Callas, Ludwig van Beethoven, Marie Curie, Miguel de Cervantes, Leonardo da Vinci, Bertha von Suttner (alocarea pe valori nu e reprodusă aici)</div></div>
           <div class="stat"><div class="n" style="font-size:16px;">Râuri și păsări</div><div class="l">Peisaje fluviale și păsări specifice Europei, ca simbol al biodiversității continentului</div></div>
         </div>
-        <p style="color:var(--text-2);font-size:13.5px;margin-top:12px;">Sondajul public a rămas deschis până pe 21 septembrie 2026 (verifică pe site-ul BCE dacă s-a încheiat și ce urmează); Consiliul guvernatorilor BCE va alege designul în jurul sfârșitului anului 2026, iar bancnotele noi vor intra în circulație în anii următori. Bancnotele actuale (seria „Europa", 2013–2019) rămân valabile și vor circula ani buni în paralel cu noua serie.</p>
+        <p style="color:var(--text-2);font-size:13.5px;margin-top:12px;">Sondajul public s-a încheiat pe 21 septembrie 2026, cu aproape zece milioane de participanți (9,96 milioane, potrivit BCE); Consiliul guvernatorilor BCE va alege conceptul final în jurul sfârșitului anului 2026, iar bancnotele noi vor intra treptat în circulație începând din anii 2030. Bancnotele actuale (seria „Europa", 2013–2019) rămân valabile și vor circula ani buni în paralel cu noua serie.</p>
       </div>
 
       <blockquote class="callout">

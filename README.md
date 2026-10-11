@@ -4,11 +4,13 @@ Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituț
 
 **Live:** https://chiuta.github.io/AGORA/
 
+Ultima actualizare: 11 octombrie 2026
+
 ![Captura de ecran](screenshot.png)
 
 ## Ce este
 
-AGORA adună în 59 de secțiuni (meniul din stânga; ☰ pe mobil) explicații despre moneda unică: de la precursorii monetari și Tratatul de la Maastricht, la BCE, Eurogrup, MES, criteriile de convergență, România și euro, drepturi UE pentru călători și un ghid practic. Faptele-cheie au fost reverificate la **8 octombrie 2026** (vezi „Surse verificate"); restul textului este informativ și se poate schimba.
+AGORA adună în 59 de secțiuni (meniul din stânga; ☰ pe mobil) explicații despre moneda unică: de la precursorii monetari și Tratatul de la Maastricht, la BCE, Eurogrup, MES, criteriile de convergență, România și euro, drepturi UE pentru călători și un ghid practic. Faptele-cheie au fost reverificate la **8 octombrie 2026**, iar sondajul BCE privind bancnotele la **11 octombrie 2026** (vezi „Surse verificate"); restul textului este informativ și se poate schimba.
 
 ## Funcții
 
@@ -43,7 +45,7 @@ Verificate în cod:
 - Rapoartele de convergență din 24 iunie 2026 (Comisia Europeană și BCE): valori de referință 2,7% (inflație) și 5,1% (dobânzi pe termen lung); Cehia și Suedia îndeplinesc trei din patru criterii; România: inflație 8,4%, dobânzi 6,7%, deficit 7,9% din PIB în 2025, datorie 59,3% (proiecție 63,4% în 2027), în afara ERM II.
 - Populații: Eurostat, `tps00001`, 1 ianuarie 2025 (zona euro, 21 de state: 358,7 mil.).
 - Flash Eurobarometer 583 (17 aprilie – 4 mai 2026): sprijin pentru euro în România 65%, Ungaria 80%.
-- BCE, comunicat din 23 iulie 2026: zece propuneri de design pentru bancnotele noi, sondaj public până la 21 septembrie 2026.
+- BCE, comunicat din 23 iulie 2026: zece propuneri de design pentru bancnotele noi; comunicatul din 23 septembrie 2026: sondajul public (23 iulie – 21 septembrie) a avut 9,96 milioane de participanți, decizia finală în jurul sfârșitului lui 2026 (verificat la 11.10.2026).
 - Euro digital: votul comisiei ECON a Parlamentului European din 23 iunie 2026 (nu încă în plen).
 - TAROM: primul Boeing 737 MAX preluat pe 12 septembrie 2026 (presa de aviație).
 - Președinția Eurogrupului: Kyriakos Pierrakakis (ales în decembrie 2025).
@@ -59,6 +61,12 @@ Verificate în cod:
 ## Rulare locală / offline
 
 Descarcă `index.html` și deschide-l în browser; funcționează fără internet.
+
+## Istoric / Changelog
+
+### 11.10.2026 — 11 octombrie 2026
+- Accesibilitate: titlu h1 (AGORA), antet semantic pentru bara mobilă; verificare axe fără încălcări.
+- Actualizare: sondajul BCE privind bancnotele noi s-a încheiat (21 septembrie 2026, 9,96 milioane de participanți; decizia finală în jurul sfârșitului lui 2026; circulație din anii 2030).
 
 ## Licență
 
