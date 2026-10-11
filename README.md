@@ -20,7 +20,8 @@ Verificate în cod:
 - Chestionar de 28 de întrebări, în ordine amestecată (Fisher–Yates), cu explicații.
 - Calculatoare locale: convertor leu–euro cu curs introdus manual, distanță în linie dreaptă între capitale (haversine), buget de călătorie, recomandator de destinație, generator de listă de bagaje.
 - Jurnalul călătorului: se ține doar în memoria paginii; poate fi exportat/importat ca fișier JSON (la import se validează țările, datele și lungimea notițelor).
-- Comutator regim zi/noapte.
+- Comutator regim zi/noapte; la prima deschidere se respectă preferința sistemului pentru tema luminoasă.
+- Legături directe către secțiuni (`#state-membre`) și butoanele Înapoi/Înainte ale browserului; scurtătura „/” deschide căutarea din meniu; tipărirea (Ctrl+P) produce secțiunea curentă, fără meniu.
 
 ## Manual de utilizare
 
@@ -63,6 +64,10 @@ Verificate în cod:
 Descarcă `index.html` și deschide-l în browser; funcționează fără internet.
 
 ## Istoric / Changelog
+
+### 11.10.2026 (a doua actualizare) — 11 octombrie 2026
+- Legături directe către secțiuni prin `#id`, cu Înapoi/Înainte funcționale și titlu de pagină actualizat (fără stocare locală).
+- Tema luminoasă a sistemului este respectată la prima deschidere; stil de tipărire pentru secțiunea curentă; scurtătura „/” pentru căutarea din meniu.
 
 ### 11.10.2026 — 11 octombrie 2026
 - Accesibilitate: titlu h1 (AGORA), antet semantic pentru bara mobilă; verificare axe fără încălcări.

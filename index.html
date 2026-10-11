@@ -2,7 +2,7 @@
 <html lang="ro" data-theme="night">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-+sTsiLv1WsltrFDhTnGzFv4mxx7UveRHRlCk3ylAfOM=' 'sha256-iHAzmJwLgNjH6QmjgrMuE+Bx3jofsYjojJdR2y9Rupc=' 'sha256-AgaoIaBsnNP26xZDDxg6LVe3YqiCvDTiDrFLjpgS8go=' 'sha256-wLCSNSjuVIXaRB2f5VstkSbH129WXhIPuA2Kg/WoF6I=' 'sha256-iYJlhgQ+fYfaTMIWxaZqTfijEyQgpVv+boWTxnXEm4A=' 'sha256-elYvzgshhrCDqxBfLdhrdpcgO7JiMLMUx22oQ8HUxGk=' 'sha256-urXmnqN13tWxgyXDk4SUBUI5p/jyZYQMVhfadJfz6Oc='; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-+sTsiLv1WsltrFDhTnGzFv4mxx7UveRHRlCk3ylAfOM=' 'sha256-iHAzmJwLgNjH6QmjgrMuE+Bx3jofsYjojJdR2y9Rupc=' 'sha256-IMQnTRcm5QeuyWPpVpkhGSUNeAgAlTFkx+4RBww7fZA=' 'sha256-wLCSNSjuVIXaRB2f5VstkSbH129WXhIPuA2Kg/WoF6I=' 'sha256-iYJlhgQ+fYfaTMIWxaZqTfijEyQgpVv+boWTxnXEm4A=' 'sha256-elYvzgshhrCDqxBfLdhrdpcgO7JiMLMUx22oQ8HUxGk=' 'sha256-urXmnqN13tWxgyXDk4SUBUI5p/jyZYQMVhfadJfz6Oc='; style-src 'unsafe-inline'; img-src data:; font-src 'none'; connect-src 'none'; media-src 'none'; object-src 'none'; frame-src 'none'; worker-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AGORA — Atlas al Zonei Euro</title>
 <meta name="description" content="Ghid complet, off-line, despre Zona Euro: istorie, geografie, organizare politică și administrativă, state membre, și un ghid practic pentru călători.">
@@ -398,6 +398,13 @@ footer.appfoot{
 }
 footer.appfoot a{color:var(--text-faint);text-decoration:underline;}
 
+@media print{
+  html,html[data-theme]{--bg:#fff;--panel:#fff;--panel-2:#f4f4f4;--text:#000;--text-2:#222;--text-faint:#444;--border:#999;--border-soft:#bbb;--gold:#333;--gold-bright:#000}
+  html,body,.app,main.content{background:#fff!important;color:#000}
+  .sidebar,.mobile-topbar,.skip,footer.appfoot{display:none!important}
+  .app{display:block}main.content{max-width:none;padding:0}
+  .section.active{break-inside:auto}
+}
 @media(max-width:920px){
   .sidebar{position:fixed;left:0;top:0;max-width:85vw;transform:translateX(-100%);transition:transform .25s ease;box-shadow:0 0 40px rgba(0,0,0,.5);}
   .sidebar.open{transform:translateX(0);}
@@ -2409,10 +2416,15 @@ function normalizeRo(s){
     .replace(/[ăâ]/g,'a').replace(/î/g,'i').replace(/ș/g,'s').replace(/ț/g,'t').replace(/é/g,'e');
 }
 
-function goToSection(id){
+function isSectionId(id){ var el = id && document.getElementById(id); return !!(el && el.classList && el.classList.contains('section')); }
+function goToSection(id, fromHash){
+  if(!isSectionId(id)) id = 'home';
   $$('.section').forEach(function(s){ s.classList.remove('active'); });
   var target = document.getElementById(id);
   if(target) target.classList.add('active');
+  /* legătură directă: #id în adresă (fără stocare); Înapoi/Înainte funcționează */
+  if(!fromHash){ try{ if(location.hash.slice(1)!==id) history.pushState(null,'',id==='home'?location.pathname+location.search:'#'+id); }catch(e){} }
+  var ttl = target && target.querySelector('h2'); if(ttl){ document.title = (id==='home' ? '' : ttl.textContent.trim()+' — ')+'AGORA — Atlas al Zonei Euro'; }
   $$('.navitem').forEach(function(n){
     var on = n.dataset.section===id;
     n.classList.toggle('active', on);
@@ -2475,14 +2487,27 @@ document.addEventListener('DOMContentLoaded', function(){
   var themeIconSun = 'M12 3v2M12 19v2M4.2 4.2l1.4 1.4M18.4 18.4l1.4 1.4M3 12h2M19 12h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4M12 7a5 5 0 100 10 5 5 0 000-10z';
   var themeIconMoon = 'M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z';
   if(themeToggle){
+    var applyTheme = function(day){
+      document.documentElement.setAttribute('data-theme', day?'day':'night');
+      themeLabel.textContent = day ? 'Regim de noapte' : 'Regim de zi';
+      document.getElementById('themeIcon').innerHTML = '<path d="'+(day?themeIconSun:themeIconMoon)+'"/>';
+    };
     themeToggle.addEventListener('click', function(){
-      var html = document.documentElement;
-      var isNight = html.getAttribute('data-theme')!=='day';
-      html.setAttribute('data-theme', isNight?'day':'night');
-      themeLabel.textContent = isNight ? 'Regim de noapte' : 'Regim de zi';
-      document.getElementById('themeIcon').innerHTML = '<path d="'+(isNight?themeIconSun:themeIconMoon)+'"/>';
+      applyTheme(document.documentElement.getAttribute('data-theme')!=='day');
     });
+    /* la prima deschidere se respectă preferința sistemului pentru tema luminoasă */
+    try{ if(window.matchMedia && matchMedia('(prefers-color-scheme: light)').matches) applyTheme(true); }catch(e){}
   }
+
+  /* legături directe către secțiuni + scurtătura „/” pentru căutare */
+  window.addEventListener('popstate', function(){ var h = location.hash.slice(1); if(!h || isSectionId(h)) goToSection(h||'home', true); });
+  if(location.hash.length>1 && isSectionId(location.hash.slice(1))) goToSection(location.hash.slice(1), true);
+  document.addEventListener('keydown', function(ev){
+    if(ev.key!=='/' || ev.ctrlKey || ev.metaKey || ev.altKey) return;
+    var a = document.activeElement, tg = a && a.tagName;
+    if(tg==='INPUT'||tg==='TEXTAREA'||tg==='SELECT') return;
+    if(navSearch){ ev.preventDefault(); var sb = document.getElementById('sidebar'); if(sb) sb.classList.add('open'); navSearch.focus(); }
+  });
 
   /* ticurile decorative ale emblemei — 32 de linii radiale, gravură fină */
   var ticksHost = document.getElementById('emblemTicks');
