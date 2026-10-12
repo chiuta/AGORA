@@ -1,10 +1,10 @@
 # AGORA — Atlas al Zonei Euro
 
+**Versiune:** 1.0.0 · **Ultima actualizare:** 12 octombrie 2026
+
 Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituții, cele 21 de state membre, România și euro, plus un ghid practic pentru călători. Proiect personal, informativ, neoficial.
 
 **Live:** https://chiuta.github.io/AGORA/
-
-Ultima actualizare: 11 octombrie 2026
 
 ![Captura de ecran](screenshot.png)
 
@@ -64,6 +64,9 @@ Verificate în cod:
 Descarcă `index.html` și deschide-l în browser; funcționează fără internet.
 
 ## Istoric / Changelog
+
+### 1.0.0 — 12 octombrie 2026
+- Versiunea și data ultimei actualizări sunt afișate în aplicație (subsol).
 
 ### 11.10.2026 (a treia actualizare) — 11 octombrie 2026
 - Chestionar: rezultatul listează întrebările greșite („De revăzut”) cu răspunsul corect și explicația și permite reluarea doar a acestora (totul rămâne în memoria paginii).
