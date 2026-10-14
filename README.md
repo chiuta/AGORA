@@ -1,6 +1,6 @@
 # AGORA — Atlas al Zonei Euro
 
-**Versiune:** 1.0.0 · **Ultima actualizare:** 12 octombrie 2026
+**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
 
 Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituții, cele 21 de state membre, România și euro, plus un ghid practic pentru călători. Proiect personal, informativ, neoficial.
 
@@ -63,7 +63,18 @@ Verificate în cod:
 
 Descarcă `index.html` și deschide-l în browser; funcționează fără internet.
 
+## Funcții noi (v1.1.0)
+
+- **Căutare în tot atlasul** (butonul „Căutare în tot textul”, FFF.search): potrivire fără diacritice și cu mici greșeli („Maastrich” găsește Maastricht), cu salt direct la secțiune; preia textul din căutarea din meniu. Fără rețea.
+- **Citirea secțiunii cu voce** (FFF.tts), cu alegerea vocii.
+- Kit comun (core, label, bundle, tts, search): etichetă de versiune, copie .fff.json.
+- Textele noi sunt în toate limbile aplicației (inclusiv hu/de unde există sistem i18n); traducerile automate sunt neverificate nativ.
+- Teste: `tests/fff-r8.test.mjs` (rețea blocată, axe 0 violări la 1280 și 360 px, inclusiv cu dialogul de căutare deschis).
+
 ## Istoric / Changelog
+
+### 14 octombrie 2026 (v1.1.0)
+- Nou: căutare locală în tot atlasul, citirea secțiunii cu voce, kit comun, teste.
 
 ### 1.0.0 — 12 octombrie 2026
 - Versiunea și data ultimei actualizări sunt afișate în aplicație (subsol).

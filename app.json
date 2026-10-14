@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "slug": "agora",
+  "name": "AGORA — Atlas al Zonei Euro",
+  "version": "1.1.0",
+  "updated": "2026-10-14",
+  "description": "Ghid complet, off-line, despre Zona Euro: istorie, geografie, organizare politică și administrativă, state membre, și un ghid practic pentru călători.",
+  "egress": [],
+  "permissions": [
+    "serviceWorker"
+  ],
+  "storageKeys": [],
+  "sizeBytes": 360990,
+  "sha256": "85ec87c6d4d9c9a761501152b0a2c63009142af1803db8d92f833ec97709218f",
+  "csp": {
+    "present": true,
+    "directives": {
+      "default-src": "'none'",
+      "script-src": "sha256×10",
+      "style-src": "'unsafe-inline'",
+      "img-src": "'self' data:",
+      "font-src": "'none'",
+      "connect-src": "'none'",
+      "media-src": "'none'",
+      "object-src": "'none'",
+      "frame-src": "'none'",
+      "worker-src": "'self'",
+      "base-uri": "'none'",
+      "form-action": "'none'",
+      "manifest-src": "'self'"
+    },
+    "scriptInline": "hash",
+    "connect": "'none'"
+  },
+  "features": {
+    "export": true,
+    "import": true,
+    "i18n": [
+      "ro",
+      "en",
+      "fr",
+      "it",
+      "es",
+      "pt",
+      "hu",
+      "de"
+    ],
+    "pwa": {
+      "manifest": true,
+      "serviceWorker": true
+    },
+    "modules": [
+      "core",
+      "label",
+      "bundle",
+      "tts",
+      "search"
+    ]
+  },
+  "kit": {
+    "version": "1.0.0",
+    "modules": [
+      "core",
+      "label",
+      "bundle",
+      "tts",
+      "search"
+    ]
+  },
+  "selfSerializing": false
+}
