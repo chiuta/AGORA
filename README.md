@@ -1,103 +1,105 @@
-# AGORA — Atlas al Zonei Euro
+# AGORA — Atlas of the Euro Area
 
-**Versiune:** 1.1.0 · **Ultima actualizare:** 14 octombrie 2026
+**English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituții, cele 21 de state membre, România și euro, plus un ghid practic pentru călători. Proiect personal, informativ, neoficial.
+**Version:** 1.1.0 · **Last updated:** 2026-10-14
 
-**Live:** https://chiuta.github.io/AGORA/
+An offline guide, in a single HTML file, to the euro area: history, institutions, the 21 member states, Romania and the euro, plus a practical guide for travellers. A personal, informational, unofficial project.
 
-![Captura de ecran](screenshot.png)
+**Live app:** https://chiuta.github.io/AGORA/
 
-## Ce este
+![Screenshot](screenshot.png)
 
-AGORA adună în 59 de secțiuni (meniul din stânga; ☰ pe mobil) explicații despre moneda unică: de la precursorii monetari și Tratatul de la Maastricht, la BCE, Eurogrup, MES, criteriile de convergență, România și euro, drepturi UE pentru călători și un ghid practic. Faptele-cheie au fost reverificate la **8 octombrie 2026**, iar sondajul BCE privind bancnotele la **11 octombrie 2026** (vezi „Surse verificate"); restul textului este informativ și se poate schimba.
+## What it is
 
-## Funcții
+AGORA gathers, in 59 sections (left-hand menu; ☰ on mobile), explanations about the single currency: from monetary precursors and the Maastricht Treaty to the ECB, the Eurogroup, the ESM, the convergence criteria, Romania and the euro, EU rights for travellers and a practical guide. The key facts were re-checked on **8 October 2026**, and the ECB banknote survey on **11 October 2026** (see "Verified sources"); the rest of the text is informational and may change.
 
-Verificate în cod:
-- Hartă mozaic a statelor (zona euro, UE în afara zonei, microstate, folosire unilaterală) cu panou de detaliu la apăsare; listă filtrabilă de state pe valuri de aderare.
-- Căutare în meniu (insensibilă la diacritice; Enter deschide profilul unei țări) și în glosar (33 de termeni).
-- Chestionar de 28 de întrebări, în ordine amestecată (Fisher–Yates), cu explicații; la final apare lista „De revăzut” (întrebările greșite, cu răspunsul corect și explicația) și butonul „Reia doar întrebările greșite”.
-- Calculatoare locale: convertor leu–euro cu curs introdus manual, distanță în linie dreaptă între capitale (haversine), buget de călătorie, recomandator de destinație, generator de listă de bagaje.
-- Jurnalul călătorului: se ține doar în memoria paginii; poate fi exportat/importat ca fișier JSON (la import se validează țările, datele și lungimea notițelor).
-- Comutator regim zi/noapte; la prima deschidere se respectă preferința sistemului pentru tema luminoasă.
-- Legături directe către secțiuni (`#state-membre`) și butoanele Înapoi/Înainte ale browserului; scurtătura „/” deschide căutarea din meniu; tipărirea (Ctrl+P) produce secțiunea curentă, fără meniu.
+## Features
 
-## Manual de utilizare
+Verified in code:
+- A tile map of the states (euro area, EU outside the area, microstates, unilateral use) with a detail panel on click; a filterable list of states by accession wave.
+- Search in the menu (diacritics-insensitive; Enter opens a country's profile) and in the glossary (33 terms).
+- A 28-question quiz, in shuffled order (Fisher–Yates), with explanations; at the end a "To review" list appears (the questions answered wrongly, with the correct answer and the explanation) and the button "Retry only the wrong questions".
+- Local calculators: lei–euro converter with a manually entered rate, straight-line distance between capitals (haversine), travel budget, destination recommender, packing-list generator.
+- Traveller's journal: kept only in the page's memory; it can be exported/imported as a JSON file (on import, countries, dates and note length are validated).
+- Day/night mode switch; on first opening, the system preference for the light theme is respected.
+- Direct links to sections (`#state-membre`) and the browser's Back/Forward buttons; the "/" shortcut opens the menu search; printing (Ctrl+P) produces the current section, without the menu.
 
-1. Alege o secțiune din meniul din stânga (pe mobil, apasă ☰); poți căuta după titlu sau după țară.
-2. În „Harta interactivă" apasă un pătrățel pentru profilul țării; „Închide ✕" îl ascunde.
-3. În „Profiluri de țară" filtrează după valul de aderare și apasă o țară.
-4. La „Convertor manual" introdu tu cursul zilei (de exemplu de pe bnr.ro) și suma; atlasul nu preia cursuri de pe internet.
-5. În „Chestionar" răspunde la întrebări; la final revezi întrebările greșite și poți relua doar acele întrebări; „Ia-o de la capăt" repornește tot chestionarul.
-6. În „Jurnalul călătorului" adaugă vizite; ca să le păstrezi, folosește „Exportă (.json)" și, ulterior, „Importă (.json)".
+## User guide
 
-## Confidențialitate și rețea
+1. Choose a section from the left-hand menu (on mobile, press ☰); you can search by title or by country.
+2. In the "Interactive map", press a small tile for the country's profile; "Close ✕" hides it.
+3. In "Country profiles", filter by accession wave and press a country.
+4. In "Manual converter", enter the day's rate yourself (for example from bnr.ro) and the amount; the atlas does not fetch rates from the internet.
+5. In "Quiz", answer the questions; at the end you review the wrong questions and can retry only those; "Start over" restarts the whole quiz.
+6. In the "Traveller's journal", add visits; to keep them, use "Export (.json)" and, later, "Import (.json)".
 
-- **Stocare:** nu folosește `localStorage`, `sessionStorage`, IndexedDB sau cookie-uri. Jurnalul și rezultatele calculatoarelor dispar la reîncărcarea paginii, dacă nu exporți jurnalul.
-- **Rețea:** nu face cereri de rețea (fără `fetch`, scripturi, fonturi sau imagini externe). Politica CSP din pagină blochează conexiunile externe.
-- **Linkuri externe** (se deschid doar la apăsare, în filă nouă, cu `rel=noopener`; trimiterea referrer-ului este dezactivată): site-uri ale operatorilor feroviari (oebb.at, belgiantrain.be, bdz.bg, hzpp.hr, elron.ee, vr.fi, sncf-connect.com, bahn.de, hellenictrain.gr, irishrail.ie, trenitalia.com, vivi.lv, ltglink.lt, cfl.lu, ns.nl, cp.pt, zssk.sk, potniski.sz.si, renfe.com), interrail.com, thetrainline.com, omio.com, flixbus.com, mae.ro, econsulat.ro, cardeuropean.ro, chiuta.github.io și trom.tf. Mențiunile de servicii comerciale (feroviare, fintech) sunt informative, nu recomandări.
-- **Permisiuni:** nu cere nicio permisiune a browserului.
-- Nu există cont, telemetrie sau analiză de trafic.
+## Privacy and network
 
-## Surse verificate (8 octombrie 2026)
+- **Storage:** it does not use `localStorage`, `sessionStorage`, IndexedDB or cookies. The journal and the calculators' results disappear when the page is reloaded, unless you export the journal.
+- **Network:** it makes no network requests (no `fetch`, scripts, fonts or external images). The CSP policy in the page blocks external connections.
+- **External links** (opened only on click, in a new tab, with `rel=noopener`; sending the referrer is disabled): websites of railway operators (oebb.at, belgiantrain.be, bdz.bg, hzpp.hr, elron.ee, vr.fi, sncf-connect.com, bahn.de, hellenictrain.gr, irishrail.ie, trenitalia.com, vivi.lv, ltglink.lt, cfl.lu, ns.nl, cp.pt, zssk.sk, potniski.sz.si, renfe.com), interrail.com, thetrainline.com, omio.com, flixbus.com, mae.ro, econsulat.ro, cardeuropean.ro, chiuta.github.io and trom.tf. Mentions of commercial services (rail, fintech) are informational, not recommendations.
+- **Permissions:** it requests no browser permission.
+- There is no account, telemetry or traffic analysis.
 
-- Bulgaria — membră a zonei euro din 1 ianuarie 2026, al 21-lea stat, curs fix 1 EUR = 1,95583 BGN: Consiliul ECOFIN (iulie 2025), BCE, Banque de France, Parlamentul European (EPRS).
-- Rapoartele de convergență din 24 iunie 2026 (Comisia Europeană și BCE): valori de referință 2,7% (inflație) și 5,1% (dobânzi pe termen lung); Cehia și Suedia îndeplinesc trei din patru criterii; România: inflație 8,4%, dobânzi 6,7%, deficit 7,9% din PIB în 2025, datorie 59,3% (proiecție 63,4% în 2027), în afara ERM II.
-- Populații: Eurostat, `tps00001`, 1 ianuarie 2025 (zona euro, 21 de state: 358,7 mil.).
-- Flash Eurobarometer 583 (17 aprilie – 4 mai 2026): sprijin pentru euro în România 65%, Ungaria 80%.
-- BCE, comunicat din 23 iulie 2026: zece propuneri de design pentru bancnotele noi; comunicatul din 23 septembrie 2026: sondajul public (23 iulie – 21 septembrie) a avut 9,96 milioane de participanți, decizia finală în jurul sfârșitului lui 2026 (verificat la 11.10.2026).
-- Euro digital: votul comisiei ECON a Parlamentului European din 23 iunie 2026 (nu încă în plen).
-- TAROM: primul Boeing 737 MAX preluat pe 12 septembrie 2026 (presa de aviație).
-- Președinția Eurogrupului: Kyriakos Pierrakakis (ales în decembrie 2025).
+## Verified sources (8 October 2026)
 
-## Limite și avertismente
+- Bulgaria — member of the euro area since 1 January 2026, the 21st state, fixed rate 1 EUR = 1.95583 BGN: ECOFIN Council (July 2025), ECB, Banque de France, European Parliament (EPRS).
+- Convergence reports of 24 June 2026 (European Commission and ECB): reference values 2.7% (inflation) and 5.1% (long-term interest rates); Czechia and Sweden meet three of the four criteria; Romania: inflation 8.4%, interest rates 6.7%, deficit 7.9% of GDP in 2025, debt 59.3% (projection 63.4% in 2027), outside ERM II.
+- Populations: Eurostat, `tps00001`, 1 January 2025 (euro area, 21 states: 358.7 million).
+- Flash Eurobarometer 583 (17 April – 4 May 2026): support for the euro in Romania 65%, Hungary 80%.
+- ECB, press release of 23 July 2026: ten design proposals for the new banknotes; press release of 23 September 2026: the public survey (23 July – 21 September) had 9.96 million participants, final decision around the end of 2026 (verified on 11.10.2026).
+- Digital euro: vote of the European Parliament's ECON committee on 23 June 2026 (not yet in plenary).
+- TAROM: first Boeing 737 MAX taken over on 12 September 2026 (aviation press).
+- Presidency of the Eurogroup: Kyriakos Pierrakakis (elected in December 2025).
 
-- Ghid informativ, **neoficial**, fără valoare juridică; nu constituie consiliere financiară, juridică sau medicală și nu are legătură cu BCE, Comisia Europeană sau alte instituții.
-- Datele se schimbă (cursuri, tarife, reguli de călătorie, programe). Pentru decizii, verifică sursele oficiale.
-- Suprafețele statelor, cotele TVA, orarele și duratele de transport, numărul de state cu sisteme de garanție-returnare și informațiile din secțiunile practice nu au fost reverificate la o sursă oficială unică; tratează-le ca orientative.
-- Distanțele sunt în linie dreaptă, nu rutiere.
-- Calculatorul de buget folosește medii generale, nu prețuri reale.
+## Limits and warnings
 
-## Rulare locală / offline
+- An informational, **unofficial** guide, with no legal value; it does not constitute financial, legal or medical advice and has no connection with the ECB, the European Commission or other institutions.
+- Data change (exchange rates, fares, travel rules, timetables). For decisions, check the official sources.
+- The states' surface areas, VAT rates, timetables and transport durations, the number of states with deposit-return systems and the information in the practical sections have not been re-checked against a single official source; treat them as indicative.
+- Distances are in a straight line, not by road.
+- The budget calculator uses general averages, not real prices.
 
-Descarcă `index.html` și deschide-l în browser; funcționează fără internet.
+## Running locally / offline
 
-## Funcții noi (v1.1.0)
+Download `index.html` and open it in a browser; it works without internet.
 
-- **Căutare în tot atlasul** (butonul „Căutare în tot textul”, FFF.search): potrivire fără diacritice și cu mici greșeli („Maastrich” găsește Maastricht), cu salt direct la secțiune; preia textul din căutarea din meniu. Fără rețea.
-- **Citirea secțiunii cu voce** (FFF.tts), cu alegerea vocii.
-- Kit comun (core, label, bundle, tts, search): etichetă de versiune, copie .fff.json.
-- Textele noi sunt în toate limbile aplicației (inclusiv hu/de unde există sistem i18n); traducerile automate sunt neverificate nativ.
-- Teste: `tests/fff-r8.test.mjs` (rețea blocată, axe 0 violări la 1280 și 360 px, inclusiv cu dialogul de căutare deschis).
+## New features (v1.1.0)
 
-## Istoric / Changelog
+- **Search across the whole atlas** (the "Search the full text" button, FFF.search): matching without diacritics and tolerant of small typos ("Maastrich" finds Maastricht), with a direct jump to the section; it takes over the text from the menu search. No network.
+- **Reading the section aloud** (FFF.tts), with a choice of voice.
+- Shared kit (core, label, bundle, tts, search): version label, .fff.json backup.
+- The new texts are in all the application's languages (including hu/de where an i18n system exists); machine translations are not natively verified.
+- Tests: `tests/fff-r8.test.mjs` (network blocked, axe 0 violations at 1280 and 360 px, including with the search dialog open).
 
-### 14 octombrie 2026 (v1.1.0)
-- Nou: căutare locală în tot atlasul, citirea secțiunii cu voce, kit comun, teste.
+## History / Changelog
 
-### 1.0.0 — 12 octombrie 2026
-- Versiunea și data ultimei actualizări sunt afișate în aplicație (subsol).
+### 14 October 2026 (v1.1.0)
+- New: local search across the whole atlas, reading the section aloud, shared kit, tests.
 
-### 11.10.2026 (a treia actualizare) — 11 octombrie 2026
-- Chestionar: rezultatul listează întrebările greșite („De revăzut”) cu răspunsul corect și explicația și permite reluarea doar a acestora (totul rămâne în memoria paginii).
+### 1.0.0 — 12 October 2026
+- The version and the date of the last update are shown in the application (footer).
 
-### 11.10.2026 (a doua actualizare) — 11 octombrie 2026
-- Legături directe către secțiuni prin `#id`, cu Înapoi/Înainte funcționale și titlu de pagină actualizat (fără stocare locală).
-- Tema luminoasă a sistemului este respectată la prima deschidere; stil de tipărire pentru secțiunea curentă; scurtătura „/” pentru căutarea din meniu.
+### 11.10.2026 (third update) — 11 October 2026
+- Quiz: the result lists the wrongly answered questions ("To review") with the correct answer and the explanation and allows retrying only those (everything stays in the page's memory).
 
-### 11.10.2026 — 11 octombrie 2026
-- Accesibilitate: titlu h1 (AGORA), antet semantic pentru bara mobilă; verificare axe fără încălcări.
-- Actualizare: sondajul BCE privind bancnotele noi s-a încheiat (21 septembrie 2026, 9,96 milioane de participanți; decizia finală în jurul sfârșitului lui 2026; circulație din anii 2030).
+### 11.10.2026 (second update) — 11 October 2026
+- Direct links to sections through `#id`, with Back/Forward working and an updated page title (no local storage).
+- The system's light theme is respected on first opening; print style for the current section; the "/" shortcut for the menu search.
 
-## Licență
+### 11.10.2026 — 11 October 2026
+- Accessibility: h1 heading (AGORA), semantic header for the mobile bar; axe check with no violations.
+- Update: the ECB survey on the new banknotes has ended (21 September 2026, 9.96 million participants; final decision around the end of 2026; circulation from the 2030s).
 
-Licența nu este încă declarată.
+## License
 
-## Autor
+The license has not yet been declared.
+
+## Author
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
 
-## English summary
+## Summary
 
 AGORA is a single-file, offline Romanian-language atlas of the euro area (21 members since Bulgaria joined on 1 January 2026): history, institutions, country profiles, Romania and the euro, and a traveller's guide, with a tile map, quiz, glossary and small local calculators. No storage, no network requests, no permissions; the trip journal lives in memory and can be exported/imported as JSON. Key facts were re-checked on 8 October 2026 against ECB, European Commission and Eurostat sources; other content is informational. License not yet declared.
