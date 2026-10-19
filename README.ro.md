@@ -102,6 +102,6 @@ Licența nu este încă declarată.
 
 Alexio — Alexandru-Ionuț Chiuță, contact: alexio@trom.tf
 
-## English summary
+## Rezumat
 
-AGORA is a single-file, offline Romanian-language atlas of the euro area (21 members since Bulgaria joined on 1 January 2026): history, institutions, country profiles, Romania and the euro, and a traveller's guide, with a tile map, quiz, glossary and small local calculators. No storage, no network requests, no permissions; the trip journal lives in memory and can be exported/imported as JSON. Key facts were re-checked on 8 October 2026 against ECB, European Commission and Eurostat sources; other content is informational. License not yet declared.
+AGORA este un atlas într-un singur fișier, offline, în limba română, al zonei euro (21 de membri de la aderarea Bulgariei la 1 ianuarie 2026): istorie, instituții, profiluri de țară, România și euro și un ghid al călătorului, cu hartă din plăci, test, glosar și mici calculatoare locale. Fără stocare, fără cereri de rețea, fără permisiuni; jurnalul de călătorie rămâne în memorie și poate fi exportat/importat ca JSON. Faptele-cheie au fost reverificate la 8 octombrie 2026 față de surse BCE, Comisia Europeană și Eurostat; restul conținutului are caracter informativ. Licență nedeclarată încă.
