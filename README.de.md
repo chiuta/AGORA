@@ -10,7 +10,7 @@ Offline-Leitfaden in einer einzigen HTML-Datei über den Euroraum: Geschichte, I
 
 **Online-App:** https://chiuta.github.io/AGORA/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.de.png)
 
 ## Was es ist
 

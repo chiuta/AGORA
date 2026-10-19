@@ -10,7 +10,7 @@ An offline guide, in a single HTML file, to the euro area: history, institutions
 
 **Live app:** https://chiuta.github.io/AGORA/
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.en.png)
 
 ## What it is
 

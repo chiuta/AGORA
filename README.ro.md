@@ -10,7 +10,7 @@ Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituț
 
 **Live:** https://chiuta.github.io/AGORA/
 
-![Captura de ecran](screenshot.png)
+![Captura de ecran](screenshot.ro.png)
 
 ## Ce este
 

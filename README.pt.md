@@ -10,7 +10,7 @@ Guia offline, num único ficheiro HTML, sobre a zona euro: história, instituiç
 
 **Aplicação online:** https://chiuta.github.io/AGORA/
 
-![Captura de ecrã](screenshot.png)
+![Captura de ecrã](screenshot.pt.png)
 
 ## O que é
 

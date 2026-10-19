@@ -10,7 +10,7 @@ Guida offline, in un unico file HTML, sull'Eurozona: storia, istituzioni, i 21 S
 
 **App online:** https://chiuta.github.io/AGORA/
 
-![Schermata](screenshot.png)
+![Schermata](screenshot.it.png)
 
 ## Che cos'è
 

@@ -10,7 +10,7 @@ Offline útmutató egyetlen HTML-fájlban az euróövezetről: történelem, int
 
 **Online alkalmazás:** https://chiuta.github.io/AGORA/
 
-![Képernyőkép](screenshot.png)
+![Képernyőkép](screenshot.hu.png)
 
 ## Mi ez
 

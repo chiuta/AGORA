@@ -10,7 +10,7 @@ Guide hors ligne, dans un seul fichier HTML, sur la zone euro : histoire, instit
 
 **Application en ligne :** https://chiuta.github.io/AGORA/
 
-![Capture d'écran](screenshot.png)
+![Capture d'écran](screenshot.fr.png)
 
 ## Présentation
 
