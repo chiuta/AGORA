@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.2.4 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.2.5 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -77,6 +77,9 @@ Scarica `index.html` e aprilo in un browser; funziona senza internet.
 - Test: `tests/fff-r8.test.mjs` (rete bloccata, axe 0 violazioni a 1280 e 360 px, anche con la finestra di ricerca aperta).
 
 ## Cronologia / Changelog
+
+### 1.2.5 — 2026-10-22
+- fff-kit 1.1.4: target touch e dimensione minima del testo; target touch/testo corretti
 
 ### 1.2.3 — 2026-10-22
 - Accessibilità: i campi paese, data e importazione del diario di viaggio hanno ora un nome annunciato dagli screen reader (in tutte le 8 lingue).
