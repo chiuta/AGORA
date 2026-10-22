@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.2.2 · **Dernière mise à jour :** 2026-10-22
+**Version :** 1.2.3 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Téléchargez `index.html` et ouvrez-le dans un navigateur ; il fonctionne sans 
 - Tests : `tests/fff-r8.test.mjs` (réseau bloqué, axe 0 violation à 1280 et 360 px, y compris avec la boîte de dialogue de recherche ouverte).
 
 ## Historique / Journal des modifications
+
+### 1.2.3 — 2026-10-22
+- Accessibilité : les champs pays, date et import du journal de voyage ont désormais un nom annoncé par les lecteurs d'écran (dans les 8 langues).
+- Mobile : le texte, les pastilles et les en-têtes de tableau font au moins 12 px sur les écrans étroits ; le bouton de version a une cible tactile plus grande.
 
 ### 1.2.2 — 2026-10-22
 - Texte roumain résiduel corrigé dans les autres langues : les deux titres de section (nouvelle série de billets, système européen d'assurance des dépôts) et les deux lignes du pied de page sont désormais traduits.
