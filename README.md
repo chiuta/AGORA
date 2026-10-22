@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.1 · **Last updated:** 2026-10-19
+**Version:** 1.2.2 · **Last updated:** 2026-10-22
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Download `index.html` and open it in a browser; it works without internet.
 - Tests: `tests/fff-r8.test.mjs` (network blocked, axe 0 violations at 1280 and 360 px, including with the search dialog open).
 
 ## History / Changelog
+
+### 1.2.2 — 2026-10-22
+- Fixed leftover Romanian text in the other languages: the two section headings (new banknote series, European deposit insurance scheme) and the two footer lines are now translated.
 
 ### 14 October 2026 (v1.1.0)
 - New: local search across the whole atlas, reading the section aloud, shared kit, tests.

@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.1 · **Utolsó frissítés:** 2026-10-19
+**Verzió:** 1.2.2 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Töltsd le az `index.html` fájlt, és nyisd meg egy böngészőben; internet n�
 - Tesztek: `tests/fff-r8.test.mjs` (letiltott hálózat, axe 0 szabálysértés 1280 és 360 px-nél, megnyitott keresőablakkal is).
 
 ## Előzmények / Változásnapló
+
+### 1.2.2 — 2026-10-22
+- Kijavítva a többi nyelvben maradt román szöveg: a két szakaszcím (új bankjegysorozat, európai betétbiztosítási rendszer) és a lábléc két sora most már le van fordítva.
 
 ### 2026. október 14. (v1.1.0)
 - Új: helyi keresés az egész atlaszban, a szekció felolvasása, közös készlet, tesztek.

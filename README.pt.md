@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.2.1 · **Última atualização:** 2026-10-19
+**Versão:** 1.2.2 · **Última atualização:** 2026-10-22
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Descarregue `index.html` e abra-o num navegador; funciona sem internet.
 - Testes: `tests/fff-r8.test.mjs` (rede bloqueada, axe 0 violações a 1280 e 360 px, inclusive com a caixa de diálogo de pesquisa aberta).
 
 ## Histórico / Registo de alterações
+
+### 1.2.2 — 2026-10-22
+- Corrigido o texto romeno residual nos outros idiomas: os dois títulos de secção (nova série de notas, sistema europeu de seguro de depósitos) e as duas linhas do rodapé estão agora traduzidos.
 
 ### 14 de outubro de 2026 (v1.1.0)
 - Novo: pesquisa local em todo o atlas, leitura da secção em voz alta, kit comum, testes.

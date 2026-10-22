@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · **Français** · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version :** 1.2.1 · **Dernière mise à jour :** 2026-10-19
+**Version :** 1.2.2 · **Dernière mise à jour :** 2026-10-22
 
 Langues de l'interface : **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Téléchargez `index.html` et ouvrez-le dans un navigateur ; il fonctionne sans 
 - Tests : `tests/fff-r8.test.mjs` (réseau bloqué, axe 0 violation à 1280 et 360 px, y compris avec la boîte de dialogue de recherche ouverte).
 
 ## Historique / Journal des modifications
+
+### 1.2.2 — 2026-10-22
+- Texte roumain résiduel corrigé dans les autres langues : les deux titres de section (nouvelle série de billets, système européen d'assurance des dépôts) et les deux lignes du pied de page sont désormais traduits.
 
 ### 14 octobre 2026 (v1.1.0)
 - Nouveau : recherche locale dans tout l'atlas, lecture de la section à voix haute, kit commun, tests.
