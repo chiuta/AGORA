@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · **Português** · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versão:** 1.2.3 · **Última atualização:** 2026-10-22
+**Versão:** 1.2.4 · **Última atualização:** 2026-10-22
 
 Idiomas da interface: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Descarregue `index.html` e abra-o num navegador; funciona sem internet.
 - Testes: `tests/fff-r8.test.mjs` (rede bloqueada, axe 0 violações a 1280 e 360 px, inclusive com a caixa de diálogo de pesquisa aberta).
 
 ## Histórico / Registo de alterações
+
+### 1.2.4 — 2026-10-22
+- fff-kit 1.1.2: PBKDF2 600 000 iterações, proteção anti-clickjacking
 
 ### 1.2.3 — 2026-10-22
 - Acessibilidade: os campos de país, data e importação do diário de viagem têm agora um nome anunciado pelos leitores de ecrã (nos 8 idiomas).

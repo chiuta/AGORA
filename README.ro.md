@@ -2,7 +2,7 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.3 · **Ultima actualizare:** 2026-10-22
+**Versiune:** 1.2.4 · **Ultima actualizare:** 2026-10-22
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Descarcă `index.html` și deschide-l în browser; funcționează fără interne
 - Teste: `tests/fff-r8.test.mjs` (rețea blocată, axe 0 violări la 1280 și 360 px, inclusiv cu dialogul de căutare deschis).
 
 ## Istoric / Changelog
+
+### 1.2.4 — 2026-10-22
+- fff-kit 1.1.2: PBKDF2 600 000 iterații, protecție anti-clickjacking
 
 ### 1.2.3 — 2026-10-22
 - Accesibilitate: câmpurile țară, dată și import din jurnalul călătorului au acum nume anunțate de cititoarele de ecran (în toate cele 8 limbi).

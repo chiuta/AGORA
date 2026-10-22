@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · **Deutsch** · [Magyar](README.hu.md)
 
-**Version:** 1.2.3 · **Zuletzt aktualisiert:** 2026-10-22
+**Version:** 1.2.4 · **Zuletzt aktualisiert:** 2026-10-22
 
 Oberflächensprachen: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Lade `index.html` herunter und öffne sie in einem Browser; sie funktioniert ohn
 - Tests: `tests/fff-r8.test.mjs` (Netzwerk gesperrt, axe 0 Verstöße bei 1280 und 360 px, auch bei geöffnetem Suchdialog).
 
 ## Verlauf / Changelog
+
+### 1.2.4 — 2026-10-22
+- fff-kit 1.1.2: PBKDF2 mit 600.000 Iterationen, Schutz vor Clickjacking
 
 ### 1.2.3 — 2026-10-22
 - Barrierefreiheit: Die Felder Land, Datum und Import im Reisetagebuch haben jetzt Namen, die Screenreader ansagen (in allen 8 Sprachen).

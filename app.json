@@ -2,7 +2,7 @@
   "schema": 1,
   "slug": "agora",
   "name": "AGORA — Atlas al Zonei Euro",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "updated": "2026-10-22",
   "description": "Ghid complet, off-line, despre Zona Euro: istorie, geografie, organizare politică și administrativă, state membre, și un ghid practic pentru călători.",
   "egress": [],
@@ -13,8 +13,8 @@
   "storageKeys": [
     "agora.lang"
   ],
-  "sizeBytes": 1107469,
-  "sha256": "3bb58d6062f8de047cc63d7b1672f41f0d2c2430207896d5fc2750b3be04265a",
+  "sizeBytes": 1107937,
+  "sha256": "dda2d4659464e07f291dff69e37cebb72884abb20eb54dcbedfd5619b04e2cf8",
   "csp": {
     "present": true,
     "directives": {
@@ -61,7 +61,7 @@
     ]
   },
   "kit": {
-    "version": "1.1.1",
+    "version": "1.1.2",
     "modules": [
       "core",
       "label",

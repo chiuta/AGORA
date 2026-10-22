@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · **Italiano** · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versione:** 1.2.3 · **Ultimo aggiornamento:** 2026-10-22
+**Versione:** 1.2.4 · **Ultimo aggiornamento:** 2026-10-22
 
 Lingue dell'interfaccia: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -69,6 +69,7 @@ Scarica `index.html` e aprilo in un browser; funziona senza internet.
 
 ## Novità (v1.1.0)
 
+- 1.2.4 — 2026-10-22: fff-kit 1.1.2: PBKDF2 600.000 iterazioni, protezione anti-clickjacking
 - **Ricerca in tutto l'atlante** (pulsante «Cerca in tutto il testo», FFF.search): corrispondenza senza segni diacritici e tollerante verso piccoli errori («Maastrich» trova Maastricht), con salto diretto alla sezione; riprende il testo dalla ricerca nel menu. Senza rete.
 - **Lettura della sezione ad alta voce** (FFF.tts), con scelta della voce.
 - Kit comune (core, label, bundle, tts, search): etichetta di versione, copia .fff.json.

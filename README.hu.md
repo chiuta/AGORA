@@ -2,7 +2,7 @@
 
 [English](README.md) · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · **Magyar**
 
-**Verzió:** 1.2.3 · **Utolsó frissítés:** 2026-10-22
+**Verzió:** 1.2.4 · **Utolsó frissítés:** 2026-10-22
 
 A felület nyelvei: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,9 @@ Töltsd le az `index.html` fájlt, és nyisd meg egy böngészőben; internet n�
 - Tesztek: `tests/fff-r8.test.mjs` (letiltott hálózat, axe 0 szabálysértés 1280 és 360 px-nél, megnyitott keresőablakkal is).
 
 ## Előzmények / Változásnapló
+
+### 1.2.4 — 2026-10-22
+- fff-kit 1.1.2: PBKDF2 600 000 iteráció, clickjacking elleni védelem
 
 ### 1.2.3 — 2026-10-22
 - Akadálymentesség: az útinapló ország-, dátum- és importmezői mostantól a képernyőolvasók által felolvasott névvel rendelkeznek (mind a 8 nyelven).
