@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.6 · **Last updated:** 2026-10-23
+**Version:** 1.2.7 · **Last updated:** 2026-10-23
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -76,6 +76,10 @@ Download `index.html` and open it in a browser; it works without internet.
 - Tests: `tests/fff-r8.test.mjs` (network blocked, axe 0 violations at 1280 and 360 px, including with the search dialog open).
 
 ## History / Changelog
+
+### 1.2.7 — 2026-10-23
+- Fix: importing a traveller's journal file with a country such as `constructor` / `__proto__` / `hasOwnProperty` was accepted (inherited object keys) and shown as "function Object() { [native code] }"; only real destinations are imported now
+- New: `tests/r10-audit.test.mjs`
 
 ### 1.2.5 — 2026-10-22
 - fff-kit 1.1.4: touch targets and minimum text size; touch targets/text fixed
