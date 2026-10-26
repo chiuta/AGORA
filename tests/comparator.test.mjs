@@ -25,6 +25,8 @@ async function mk(o = {}) {
   return {ctx, page};
 }
 async function axeRun(page, sel) {
+  // așteaptă sfârșitul animațiilor/tranzițiilor finite (fadein): altfel axe măsoară opacitate parțială sub încărcare
+  await page.waitForFunction(() => document.getAnimations().every(a => a.playState !== 'running' || a.effect.getComputedTiming().iterations === Infinity), null, {timeout: 20000});
   if (!(await page.evaluate(() => !!window.axe))) await page.evaluate(fs.readFileSync(AXE, 'utf8') + '\n;0');
   return page.evaluate(async s => { const r = await window.axe.run(document.querySelector(s), {resultTypes: ['violations']}); return r.violations.map(v => v.id + ':' + v.nodes.map(n => n.target.join(' ')).slice(0, 3).join(' | ')); }, sel);
 }
