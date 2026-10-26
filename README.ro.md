@@ -2,13 +2,15 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 1.2.7 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituții, cele 21 de state membre, România și euro, plus un ghid practic pentru călători. Proiect personal, informativ, neoficial.
 
 **Live:** https://chiuta.github.io/AGORA/
+
+**Nou în 2.0.0:** *Comparator de state* — compară cele 21 de state ale zonei euro pe indicatorii din aplicație (populație, suprafață, densitate calculată, anul adoptării euro, ani în zona euro) sau pe indicatori proprii, cu sursa și data introduse de tine; grafic cu bare suprapuse pentru doi indicatori, scenarii „ce-ar fi dacă” (variație procentuală → loc și pondere) și export CSV. Nu se adaugă date macroeconomice noi: se folosesc doar valorile existente în aplicație sau cele introduse de utilizator, iar ce introduci rămâne pe dispozitiv.
 
 ![Captura de ecran](screenshot.ro.png)
 

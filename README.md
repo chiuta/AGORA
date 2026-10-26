@@ -2,13 +2,15 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 1.2.7 · **Last updated:** 2026-10-26
+**Version:** 2.0.0 · **Last updated:** 2026-10-26
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
 An offline guide, in a single HTML file, to the euro area: history, institutions, the 21 member states, Romania and the euro, plus a practical guide for travellers. A personal, informational, unofficial project.
 
 **Live app:** https://chiuta.github.io/AGORA/
+
+**New in 2.0.0:** *State comparator* — compare the 21 euro-area states on the app's own indicators (population, area, computed density, year of euro adoption, years in the euro area) or on your own indicators with the source and date you enter; overlaid two-indicator bar chart, "what if" scenarios (percentage change → rank and share) and CSV export. No new macroeconomic data is added: only values already in the app or entered by the user are used, and what you enter stays on your device.
 
 ![Screenshot](screenshot.en.png)
 
