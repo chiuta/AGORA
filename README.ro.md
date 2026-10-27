@@ -2,7 +2,9 @@
 
 [English](README.md) · **Română** · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Versiune:** 2.0.0 · **Ultima actualizare:** 2026-10-26
+**Versiune:** 2.0.1 · **Ultima actualizare:** 2026-10-27
+
+**Stare:** stabil · **Offline:** complet (fără cereri în rețea; linkurile externe se deschid doar la clic)
 
 Limbile interfeței: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -13,6 +15,13 @@ Ghid offline, într-un singur fișier HTML, despre zona euro: istorie, instituț
 **Nou în 2.0.0:** *Comparator de state* — compară cele 21 de state ale zonei euro pe indicatorii din aplicație (populație, suprafață, densitate calculată, anul adoptării euro, ani în zona euro) sau pe indicatori proprii, cu sursa și data introduse de tine; grafic cu bare suprapuse pentru doi indicatori, scenarii „ce-ar fi dacă” (variație procentuală → loc și pondere) și export CSV. Nu se adaugă date macroeconomice noi: se folosesc doar valorile existente în aplicație sau cele introduse de utilizator, iar ce introduci rămâne pe dispozitiv.
 
 ![Captura de ecran](screenshot.ro.png)
+
+## Date și surse (ce conține atlasul, din ce sursă, la ce dată)
+
+- **Acoperire:** zona euro cu **21 de state**, **inclusiv Bulgaria** (membră din 1 ianuarie 2026, curs fix 1 EUR = 1,95583 leva). Bulgaria există deja în lista de state, harta, tabelul istoric, chestionar și în secțiunea despre România; reverificat la 27 octombrie 2026.
+- **Sursa pentru Bulgaria:** comunicatul BCE din 1 ianuarie 2026 (ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.en.html), consultat la 27 octombrie 2026: euro intră în circulație în Bulgaria la 1 ianuarie 2026, al 21-lea stat, curs 1,95583 leva pentru un euro (decizia din iulie 2025).
+- **Celelalte date:** populațiile din Eurostat (tabelul `tps00001`, situația la 1 ianuarie 2025); faptele-cheie din BCE, Comisia Europeană și Eurostat, verificate de autor la **8 octombrie 2026** (vezi „Surse verificate”). **Nereverificate la 27 octombrie 2026** (în afară de Bulgaria): de verificat înainte de decizii. Suprafețele și ratele TVA nu au fost confruntate niciodată cu o singură sursă oficială.
+- **Unde apare în aplicație:** subsol, „Date și surse” (8 limbi).
 
 ## Ce este
 
@@ -78,6 +87,11 @@ Descarcă `index.html` și deschide-l în browser; funcționează fără interne
 - Teste: `tests/fff-r8.test.mjs` (rețea blocată, axe 0 violări la 1280 și 360 px, inclusiv cu dialogul de căutare deschis).
 
 ## Istoric / Changelog
+
+Jurnal complet: [`CHANGELOG.md`](CHANGELOG.md).
+
+### 2.0.1 — 2026-10-27 (anterior: v2.0.0)
+- Texte: descriere extinsă (meta, card social, `app.json`), bloc „Date și surse” în subsol în 8 limbi, Bulgaria reverificată în comunicatul BCE din 1 ianuarie 2026.
 
 ### 1.2.5 — 2026-10-22
 - fff-kit 1.1.4: ținte tactile și text minim; ținte tactile/text corectate

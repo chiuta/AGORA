@@ -2,7 +2,9 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.0.0 · **Last updated:** 2026-10-26
+**Version:** 2.0.1 · **Last updated:** 2026-10-27
+
+**Status:** stable · **Offline:** complete (no network requests; external links open only on click)
 
 Interface languages: **Română, English, Français, Italiano, Español, Português (PT), Deutsch, Magyar**
 
@@ -13,6 +15,13 @@ An offline guide, in a single HTML file, to the euro area: history, institutions
 **New in 2.0.0:** *State comparator* — compare the 21 euro-area states on the app's own indicators (population, area, computed density, year of euro adoption, years in the euro area) or on your own indicators with the source and date you enter; overlaid two-indicator bar chart, "what if" scenarios (percentage change → rank and share) and CSV export. No new macroeconomic data is added: only values already in the app or entered by the user are used, and what you enter stays on your device.
 
 ![Screenshot](screenshot.en.png)
+
+## Data and sources (what the atlas contains, which source, which date)
+
+- **Scope:** the euro area with **21 states**, **including Bulgaria** (member since 1 January 2026, fixed rate 1 EUR = 1.95583 leva). Bulgaria is already present in the state list, the tile map, the history table, the quiz and the Romania section; this was re-checked on 27 October 2026.
+- **Source for Bulgaria:** ECB press release of 1 January 2026 (ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.en.html), read on 27 October 2026: the euro enters circulation in Bulgaria on 1 January 2026, the 21st state, rate 1.95583 leva per euro (decision of July 2025).
+- **Other data:** populations from Eurostat (table `tps00001`, situation on 1 January 2025); key facts from the ECB, the European Commission and Eurostat, checked by the author on **8 October 2026** (see "Verified sources"). **Not re-checked on 27 October 2026** (except Bulgaria): to be verified before decisions. Areas and VAT rates were never checked against a single official source.
+- **Where it is shown in the app:** footer, "Data and sources" (8 languages).
 
 ## What it is
 
@@ -78,6 +87,11 @@ Download `index.html` and open it in a browser; it works without internet.
 - Tests: `tests/fff-r8.test.mjs` (network blocked, axe 0 violations at 1280 and 360 px, including with the search dialog open).
 
 ## History / Changelog
+
+Full changelog: [`CHANGELOG.md`](CHANGELOG.md).
+
+### 2.0.1 — 2026-10-27 (previous: v2.0.0)
+- Texts: expanded description (meta, social card, `app.json`), "Data and sources" block in the footer in 8 languages, Bulgaria re-checked against the ECB press release of 1 January 2026.
 
 ### 1.2.5 — 2026-10-22
 - fff-kit 1.1.4: touch targets and minimum text size; touch targets/text fixed
