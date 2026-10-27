@@ -1,5 +1,15 @@
 # Jurnal de modificări — AGORA
 
+## 2.1.0 — 2026-10-27
+
+Anterior: v2.0.1. Recenzie 2 (2026-10-27).
+
+- Date: populația Franței corectată de la ~68,9 la ~68,6 mil. (Eurostat 68.635.900 și INSEE 68.606.000, 1 ianuarie 2025).
+- Portugalia (~11,4 mil.) NU a fost modificată: Eurostat (iulie 2025) ~10,75 mil. vs. INE revizuit ~11,4 mil. Conflict de surse, rămâne „de verificat”.
+- Nota „Date și surse” (`z7`) actualizată în 8 limbi; limbile în afară de RO/EN sunt marcate „traducere automată”.
+- Test nou `tests/date-surse.test.mjs`.
+- Neverificabile (rămân „de verificat”): suprafețe, rate TVA.
+
 ## 2.0.1 — 2026-10-27
 
 Anterior: v2.0.0. Recenzie 2026-10-27 (doar texte; logica aplicației nu s-a schimbat).
