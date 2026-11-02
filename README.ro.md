@@ -60,7 +60,7 @@ Verificate în cod:
 
 - Bulgaria — membră a zonei euro din 1 ianuarie 2026, al 21-lea stat, curs fix 1 EUR = 1,95583 BGN: Consiliul ECOFIN (iulie 2025), BCE, Banque de France, Parlamentul European (EPRS).
 - Rapoartele de convergență din 24 iunie 2026 (Comisia Europeană și BCE): valori de referință 2,7% (inflație) și 5,1% (dobânzi pe termen lung); Cehia și Suedia îndeplinesc trei din patru criterii; România: inflație 8,4%, dobânzi 6,7%, deficit 7,9% din PIB în 2025, datorie 59,3% (proiecție 63,4% în 2027), în afara ERM II.
-- Populații: Eurostat, `tps00001`, 1 ianuarie 2025 (zona euro, 21 de state: 358,7 mil.), cu excepția DE, EE, ES, FI, FR, LV, MT, înlocuite la 2 noiembrie 2026 cu cifre oficiale naționale/Eurostat la 1 ianuarie 2026 (Malta: sfârșitul lui 2025); vezi „Date și surse” în aplicație.
+- Populații: Eurostat, `tps00001`, 1 ianuarie 2025 (zona euro, 21 de state: 358,7 mil.), cu excepția DE, EE, ES, FI, FR, LV, MT, NL, LU, înlocuite la 2 noiembrie 2026 (BE confirmat și de Statbel: 11.867.634) cu cifre oficiale naționale/Eurostat la 1 ianuarie 2026 (Malta: sfârșitul lui 2025); vezi „Date și surse” în aplicație.
 - Flash Eurobarometer 583 (17 aprilie – 4 mai 2026): sprijin pentru euro în România 65%, Ungaria 80%.
 - BCE, comunicat din 23 iulie 2026: zece propuneri de design pentru bancnotele noi; comunicatul din 23 septembrie 2026: sondajul public (23 iulie – 21 septembrie) a avut 9,96 milioane de participanți, decizia finală în jurul sfârșitului lui 2026 (verificat la 11.10.2026).
 - Euro digital: votul comisiei ECON a Parlamentului European din 23 iunie 2026 (nu încă în plen).
