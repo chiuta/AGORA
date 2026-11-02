@@ -39,7 +39,7 @@ console.log('1. Date încorporate: analiza populației și suprafeței');
   const {ctx, page} = await mk();
   const d = await page.evaluate(() => { const o = {}; countries.forEach(c => o[c.id] = [AG_CMP.parsePop(c.pop), AG_CMP.parseArea(c.area)]); return o; });
   ok(Object.keys(d).length === 21 && Object.values(d).every(v => v[0] > 0 && v[1] > 0), '21 de state, populație și suprafață analizate fără rest', d);
-  ok(d.AT[0] === 9.2 && d.AT[1] === 83879 && Math.abs(d.MT[0] - 0.574) < 1e-9 && d.MT[1] === 316 && Math.abs(d.LU[0] - 0.682) < 1e-9, 'valori de control (AT, MT, LU) identice cu profilurile');
+  ok(d.AT[0] === 9.2 && d.AT[1] === 83879 && Math.abs(d.MT[0] - 0.588) < 1e-9 && d.MT[1] === 316 && Math.abs(d.LU[0] - 0.682) < 1e-9, 'valori de control (AT, MT, LU) identice cu profilurile');
   await open(page);
   ok((await rowIds(page)).length === 21, '21 de rânduri în grafic');
   ok((await rowIds(page))[0] === 'DE', 'implicit: populația, descrescător, Germania prima');

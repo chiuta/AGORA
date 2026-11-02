@@ -60,7 +60,7 @@ Verified in code:
 
 - Bulgaria — member of the euro area since 1 January 2026, the 21st state, fixed rate 1 EUR = 1.95583 BGN: ECOFIN Council (July 2025), ECB, Banque de France, European Parliament (EPRS).
 - Convergence reports of 24 June 2026 (European Commission and ECB): reference values 2.7% (inflation) and 5.1% (long-term interest rates); Czechia and Sweden meet three of the four criteria; Romania: inflation 8.4%, interest rates 6.7%, deficit 7.9% of GDP in 2025, debt 59.3% (projection 63.4% in 2027), outside ERM II.
-- Populations: Eurostat, `tps00001`, 1 January 2025 (euro area, 21 states: 358.7 million).
+- Populations: Eurostat, `tps00001`, 1 January 2025 (euro area, 21 states: 358.7 million), except DE, EE, ES, FI, FR, LV, MT, replaced on 2 November 2026 with official national/Eurostat figures for 1 January 2026 (Malta: end of 2025); see "Data and sources" in the app.
 - Flash Eurobarometer 583 (17 April – 4 May 2026): support for the euro in Romania 65%, Hungary 80%.
 - ECB, press release of 23 July 2026: ten design proposals for the new banknotes; press release of 23 September 2026: the public survey (23 July – 21 September) had 9.96 million participants, final decision around the end of 2026 (verified on 11.10.2026).
 - Digital euro: vote of the European Parliament's ECON committee on 23 June 2026 (not yet in plenary).
