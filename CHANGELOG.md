@@ -1,5 +1,13 @@
 # Jurnal de modificări — AGORA
 
+## 2.1.1 — 2026-11-02
+
+Actualizare surse (2026-11-02).
+
+- Euro digital: nota din secțiunea „Euro digital” (8 limbi) spunea că votul ECON din 23 iunie 2026 „nu e încă un vot în plen". Actualizat: pe 9 iulie 2026 plenul Parlamentului European a confirmat mandatul de negociere (416 pentru, 169 împotrivă, 22 abțineri), iar negocierile cu statele membre au început (Brussels Signal, Sofia Globe; obiectiv declarat: acord până la finele lui 2026, pilot BCE în 2027, disponibilitate în 2029).
+- Verificate fără modificări: calendarul noii serii de bancnote (sondaj 23 iulie – 21 septembrie 2026, decizia Consiliului guvernatorilor în jurul finelui lui 2026; ecb.europa.eu).
+- Neverificate (rămân „de verificat"): populațiile (situația la 1 ianuarie 2025; Eurostat a publicat date la 1 ianuarie 2026 pe 10 iulie 2026, dar tabelul complet pe țări nu a putut fi consultat), suprafețe, TVA, linkurile către operatorii feroviari.
+
 ## 2.1.0 — 2026-10-27
 
 Anterior: v2.0.1. Recenzie 2 (2026-10-27).

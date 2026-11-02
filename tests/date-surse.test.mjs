@@ -1,4 +1,4 @@
-// AGORA 2.1.0 — populația Franței corectată (68,6 mil.) și nota „Date și surse” actualizată. Rulare: node tests/date-surse.test.mjs
+// AGORA 2.1.1 — populația Franței corectată (68,6 mil.) și nota „Date și surse” actualizată. Rulare: node tests/date-surse.test.mjs
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
