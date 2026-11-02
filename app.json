@@ -14,8 +14,8 @@
     "agora.cmp",
     "agora.lang"
   ],
-  "sizeBytes": 1230958,
-  "sha256": "84f6d010d37787788256a7393cd45246cf9c5de258aa5fc89ed27cdc051cd3d2",
+  "sizeBytes": 1371392,
+  "sha256": "1441de59f78c152406b219407cb0492042424df62b77a8906d7e4b0f3e487671",
   "csp": {
     "present": true,
     "directives": {
@@ -59,6 +59,10 @@
       "dialog",
       "label",
       "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history",
       "tts",
       "search"
     ]
@@ -71,6 +75,10 @@
       "dialog",
       "label",
       "bundle",
+      "qr",
+      "p2p",
+      "sync",
+      "history",
       "tts",
       "search"
     ]
