@@ -1,5 +1,9 @@
 # Jurnal de modificări — AGORA
 
+## 2.1.4 — 2026-11-03
+
+Etapa 4: cifrele din comparator marcate verificat / nepotrivit / neverificat după reproducerile primite (plic claim/repro)
+
 ## 2.1.1 — 2026-11-02 (reîmprospătare kit)
 
 - Nou (kit): **Sincronizare între dispozitive** (`FFF.sync`) — în dialogul «Transparență» (clic pe versiune → Copie de siguranță): conectezi două dispozitive direct (WebRTC, cod/QR, fără server și fără cont) și își schimbă datele aplicației; cea mai recentă valoare câștigă, secretele (chei API, parole) nu se trimit, ștergerile nu se propagă. Aplicarea trece prin importul kitului (confirmare, chei permise, rollback).
