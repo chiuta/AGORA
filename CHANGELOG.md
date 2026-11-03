@@ -1,5 +1,9 @@
 # Jurnal de modificări — AGORA
 
+## 2.1.5 — 2026-11-03
+
+Etapa 7: textul „Date și surse” (z7, 8 limbi) și README spun acum clar că populațiile de bază sunt Eurostat tps00001 (1 ian. 2025), în parte înlocuite cu cifre naționale; diferența Franței (~69,1 vs ~68,6 mil.) vine din data și aria de referință (INSEE, 1 ian. 2026, cu Mayotte), nu dintr-o eroare.
+
 ## 2.1.4 — 2026-11-03
 
 Etapa 4: cifrele din comparator marcate verificat / nepotrivit / neverificat după reproducerile primite (plic claim/repro)

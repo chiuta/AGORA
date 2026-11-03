@@ -2,7 +2,7 @@
 
 **English** · [Română](README.ro.md) · [Français](README.fr.md) · [Italiano](README.it.md) · [Español](README.es.md) · [Português](README.pt.md) · [Deutsch](README.de.md) · [Magyar](README.hu.md)
 
-**Version:** 2.1.4 · **Last updated:** 2026-11-03
+**Version:** 2.1.5 · **Last updated:** 2026-11-03
 
 **Status:** stable · **Offline:** complete (no network requests; external links open only on click)
 
@@ -20,8 +20,8 @@ An offline guide, in a single HTML file, to the euro area: history, institutions
 
 - **Scope:** the euro area with **21 states**, **including Bulgaria** (member since 1 January 2026, fixed rate 1 EUR = 1.95583 leva). Bulgaria is already present in the state list, the tile map, the history table, the quiz and the Romania section; this was re-checked on 27 October 2026.
 - **Source for Bulgaria:** ECB press release of 1 January 2026 (ecb.europa.eu/press/pr/date/2026/html/ecb.pr260101~c830245e42.en.html), read on 27 October 2026: the euro enters circulation in Bulgaria on 1 January 2026, the 21st state, rate 1.95583 leva per euro (decision of July 2025).
-- **Other data:** populations from Eurostat (table `tps00001`, situation on 1 January 2025); key facts from the ECB, the European Commission and Eurostat, checked by the author on **8 October 2026** (see "Verified sources"). **Not re-checked on 27 October 2026** (except Bulgaria): to be verified before decisions. Areas and VAT rates were never checked against a single official source.
-- **Correction on 27 October 2026:** the population of France was changed from ~68.9 to ~68.6 million (Eurostat 68,635,900 and INSEE 68,606,000, both at 1 January 2025). **Portugal** (~11.4 million) is left unchanged: Eurostat (July 2025) gives ~10.75 million, while INE later revised it to ~11.4 million; the sources conflict, so it stays marked "to be verified". Areas and VAT remain unverified.
+- **Other data:** base populations from Eurostat (table `tps00001`, situation on 1 January 2025), partly replaced by national figures on 2 November 2026 (see below; the France gap ~69.1 vs ~68.6 million is a reference-date and scope difference: INSEE counts 1 January 2026 and includes Mayotte); key facts from the ECB, the European Commission and Eurostat, checked by the author on **8 October 2026** (see "Verified sources"). **Not re-checked on 27 October 2026** (except Bulgaria): to be verified before decisions. Areas and VAT rates were never checked against a single official source.
+- **Correction on 27 October 2026 (superseded for France by the 2 November update):** the population of France was changed from ~68.9 to ~68.6 million (Eurostat 68,635,900 and INSEE 68,606,000, both at 1 January 2025). **Portugal** (~11.4 million) is left unchanged: Eurostat (July 2025) gives ~10.75 million, while INE later revised it to ~11.4 million; the sources conflict, so it stays marked "to be verified". Areas and VAT remain unverified.
 - **Where it is shown in the app:** footer, "Data and sources" (8 languages).
 
 ## What it is
