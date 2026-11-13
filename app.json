@@ -2,8 +2,8 @@
   "schema": 1,
   "slug": "agora",
   "name": "AGORA — Atlas al Zonei Euro",
-  "version": "2.1.10",
-  "updated": "2026-11-11",
+  "version": "2.1.11",
+  "updated": "2026-11-13",
   "description": "Atlas offline al zonei euro (21 de state, inclusiv Bulgaria din 1 ianuarie 2026): istorie, instituții (BCE, Eurogrup, MES), profiluri de țară, România și euro, comparator de state și ghid pentru călători. Date din aplicație (BCE, Comisia Europeană, Eurostat), verificate de autor la 8 octombrie 2026; Bulgaria reverificată la 27 octombrie 2026. Informativ, neoficial.",
   "egress": [],
   "permissions": [
@@ -17,8 +17,8 @@
     "agora.cmp",
     "agora.lang"
   ],
-  "sizeBytes": 1494760,
-  "sha256": "bb96cad7caf0263f53800872a22c7b7d007d672b2465cdbd5217456036106085",
+  "sizeBytes": 1508337,
+  "sha256": "ad008c57d00c2af6523b9c5a44030b731a216127021bd02d68750329aa3efeb1",
   "csp": {
     "present": true,
     "directives": {
@@ -62,6 +62,7 @@
       "dialog",
       "exit",
       "view",
+      "ux",
       "label",
       "bundle",
       "qr",
@@ -73,13 +74,14 @@
     ]
   },
   "kit": {
-    "version": "1.4.0",
+    "version": "1.5.0",
     "modules": [
       "core",
       "store",
       "dialog",
       "exit",
       "view",
+      "ux",
       "label",
       "bundle",
       "qr",
