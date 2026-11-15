@@ -11,19 +11,20 @@
     "serviceWorker",
     "localStorage",
     "Web Crypto",
+    "WebGL",
     "BroadcastChannel"
   ],
   "storageKeys": [
     "agora.cmp",
     "agora.lang"
   ],
-  "sizeBytes": 1508337,
-  "sha256": "ad008c57d00c2af6523b9c5a44030b731a216127021bd02d68750329aa3efeb1",
+  "sizeBytes": 1560348,
+  "sha256": "38c40d022a3cfa3f3eb823b93f27f98654da1e4bf89722cc5cc904370585a7d5",
   "csp": {
     "present": true,
     "directives": {
       "default-src": "'none'",
-      "script-src": "sha256×17",
+      "script-src": "sha256×18",
       "style-src": "'unsafe-inline'",
       "img-src": "'self' data:",
       "font-src": "'none'",
