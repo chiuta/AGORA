@@ -1,5 +1,9 @@
 # Jurnal de modificări — AGORA
 
+## 2.1.12 — 2026-11-15
+
+- Nou: texturi fractale hiper-detaliate (fff-texturi 1.1.2) — fundalul și suprafețele mari (carduri, panouri, antete, butoane; filele și dialogurile ascunse la încărcare, când se deschid) primesc un material generat local (WebGL2, fără rețea și fără imagini), care se repetă fără cusătură; culorile aplicației rămân ale ei. Se oprește din dialogul „Transparență” sau cu `?notex=1`.
+
 ## 2.1.5 — 2026-11-03
 
 Etapa 7: textul „Date și surse” (z7, 8 limbi) și README spun acum clar că populațiile de bază sunt Eurostat tps00001 (1 ian. 2025), în parte înlocuite cu cifre naționale; diferența Franței (~69,1 vs ~68,6 mil.) vine din data și aria de referință (INSEE, 1 ian. 2026, cu Mayotte), nu dintr-o eroare.
